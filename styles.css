@@ -79,6 +79,7 @@ main footer {
   padding-top: 5rem;
 }
 main footer .box {
+  overflow: hidden;
   width: 31.5%;
   height: 27rem;
   border-radius: 0.7rem;
@@ -119,7 +120,7 @@ main footer .box3 {
   margin-top: 5.5rem;
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1168px) {
   main {
     width: 90%;
     height: auto;
