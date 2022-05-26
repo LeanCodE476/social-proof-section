@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "League Spartan", sans-serif;
+  font-size: 10px;
+}
+
+main {
+  display: grid;
+  margin: 5rem auto;
+  width: 70%;
+  height: 90vh;
+  grid-template-areas: "sectionL sectionR" "footer footer";
+  grid-template-columns: 45% 1fr;
+  grid-template-rows: auto 40rem;
+}
+main .container-left {
+  min-width: 30rem;
+  grid-area: sectionL;
+}
+main .container-left h1 {
+  font-size: 6rem;
+  color: #502050;
+}
+main .container-left p {
+  width: 80%;
+  margin-top: 3rem;
+  font-size: 2.1rem;
+  color: #937b92;
+}
+main .container-right {
+  min-width: 30rem;
+  grid-area: sectionR;
+  padding-top: 2rem;
+}
+main .container-right .box-stars {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  margin: 2rem 4rem 0 0;
+  width: 86%;
+  height: 6rem;
+  background-color: #f7f2f7;
+  display: flex;
+  box-shadow: 9.91px 9.91px 15px #D9DADE, -9.91px -9.91px 15px #FFFFFF;
+}
+main .container-right .box-stars .box-start-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 3rem;
+  width: 50%;
+}
+main .container-right .box-stars .box-start-flex img {
+  height: 2rem;
+}
+main .container-right .box-stars p {
+  width: 100%;
+  line-height: 6rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: #502050;
+  font-weight: 700;
+}
+main .container-right .container-stars-2 {
+  margin-left: 7%;
+}
+main .container-right .container-stars-3 {
+  margin-left: 14%;
+}
+main footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5rem;
+}
+main footer .box {
+  width: 31.5%;
+  height: 27rem;
+  border-radius: 0.7rem;
+  background-color: #502050;
+  padding: 3.3rem;
+  box-shadow: 9.91px 9.91px 15px #D9DADE, -9.91px -9.91px 15px #FFFFFF;
+}
+main footer .box .container-header-card {
+  display: flex;
+}
+main footer .box .container-header-card img {
+  border-radius: 50%;
+  height: 6rem;
+}
+main footer .box .container-header-card p {
+  margin-top: 1rem;
+  font-weight: 600;
+  margin-left: 2rem;
+  font-size: 1.7rem;
+  color: white;
+  letter-spacing: 1px;
+  line-height: 1.8rem;
+}
+main footer .box .container-header-card p span {
+  font-weight: 400;
+  color: #ee68a4;
+}
+main footer .box p {
+  font-weight: 400;
+  margin-top: 4rem;
+  font-size: 2rem;
+  color: white;
+}
+main footer .box2 {
+  margin-top: 2.5rem;
+}
+main footer .box3 {
+  margin-top: 5.5rem;
+}
+
+@media screen and (max-width: 968px) {
+  main {
+    width: 90%;
+    height: auto;
+    grid-template-areas: "sectionL" "sectionR" "footer";
+    grid-template-columns: none;
+    grid-template-rows: none;
+  }
+  main .container-left {
+    min-width: 30rem;
+    height: 25rem;
+  }
+  main .container-left h1 {
+    text-align: center;
+    font-size: 4rem;
+  }
+  main .container-left p {
+    text-align: center;
+    width: 95%;
+  }
+  main .container-right {
+    min-width: 20rem;
+  }
+  main .container-right .box-stars {
+    width: 100%;
+    height: 8rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .container-right .box-stars .box-start-flex {
+    margin-top: 2rem;
+    justify-content: space-around;
+    margin-left: 0rem;
+  }
+  main .container-right .box-stars p {
+    line-height: 5rem;
+  }
+  main .container-right .container-stars-2 {
+    margin-left: 0;
+  }
+  main .container-right .container-stars-3 {
+    margin-left: 0;
+  }
+  main footer {
+    justify-content: none;
+    flex-direction: column;
+  }
+  main footer .box2, main footer .box3 {
+    margin-top: 1.7rem;
+  }
+  main footer .box {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
